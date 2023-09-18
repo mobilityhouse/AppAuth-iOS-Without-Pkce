@@ -256,7 +256,7 @@ static NSString *const kAdditionalParametersKey = @"additionalParameters";
     [query addParameter:kAuthorizationCodeKey value:_authorizationCode];
   }
   if (_codeVerifier) {
-    [query addParameter:kCodeVerifierKey value:_codeVerifier];
+    //remove parameter to not continue PKCE process [query addParameter:kCodeVerifierKey value:_codeVerifier];
   }
 
   // Add any additional parameters the client has specified.
